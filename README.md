@@ -27,16 +27,15 @@ cd FileSignatureGenerator
 Run the program from the command line using the following syntax:
 ```bash
 cd build/
-./file_signature_generator <input_file> <output_file> <block_size>
-
+./file_signature_generator -i <input_file> -o <output_file> -bs <block_size>
 ```
-- **<input_file>**: Path to the input file for which the signature will be generated **[Mandatory]**.
-- **<output_file>**: Path to the output file where the signature (hashes) will be saved **[Optional]**.
-- **<block_size>**: Size of the blocks in megabytes. The default block size is 1 MB (1048576 bytes) **[Optional]**.
+- **-i <input_file>**: Path to the input file for which the signature will be generated **[Mandatory]**.
+- **-o <output_file>**: Path to the output file where the signature (hashes) will be saved **[Optional]**.
+- **-bs <block_size>**: Size of the blocks in megabytes. The default block size is 1 MB (1048576 bytes) **[Optional]**.
 
 ## Example
 ```bash
-./file_signature_generator input.txt signature.txt 1
+./file_signature_generator -i input.txt -o signature.txt -bs 1
 ```
 
 **In this example:**
