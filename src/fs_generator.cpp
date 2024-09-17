@@ -62,16 +62,8 @@ bool FSGenerator::basic_parameters_initialization(int args,
 
   bool result = true;
   do {
-    try {
-      common::parse_command_line_arguments(args, argv, source_file,
-                                           destination_file, block_size);
-    } catch (const std::exception& e) {
-      LOG_ERROR(_logger)
-          << "File signature generator initialization was failed. The reason: "
-          << e.what();
-      result = false;
-      break;
-    }
+    common::parse_command_line_arguments(args, argv, source_file,
+                                         destination_file, block_size);
 
     if (source_file.empty()) {
       LOG_ERROR(_logger)
@@ -115,7 +107,7 @@ bool FSGenerator::init_components() {
         Settings::instance().get_destination_filename());
 
     if (!_file_man->init()) {
-      LOG_ERROR(_logger) << "File manager initialization was failed.";
+      LOG_ERROR(_logger) << "File manager initialization failed.";
       init_result = false;
       break;
     }
