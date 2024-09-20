@@ -1,7 +1,7 @@
 #include <iostream>
 
+#include "core/log.h"
 #include "include/fs_generator.h"
-#include "utils/include/log.h"
 #include "utils/include/result_printer.h"
 
 int main(int args, const char* argv[]) {

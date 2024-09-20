@@ -15,6 +15,7 @@ namespace fs_generator {
 
 using namespace common_constants;
 using namespace common_types;
+using namespace logger;
 
 FSGenSingleThreadImpl::FSGenSingleThreadImpl(
     std::shared_ptr<hash_generator::HashGenerator> hash_generator, FMPtr fm)

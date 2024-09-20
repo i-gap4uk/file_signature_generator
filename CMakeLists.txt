@@ -10,10 +10,10 @@ ExternalProject_Add(logger
     GIT_REPOSITORY git@github.com:i-gap4uk/Logger.git
     GIT_TAG master
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_BINARY_DIR}/logger/build
-    BUILD_BYPRODUCTS ${CMAKE_BINARY_DIR}/logger/build/liblogger.a  # Ensure this is listed as a build product
+    BUILD_BYPRODUCTS ${CMAKE_BINARY_DIR}/logger/build/liblogger.a
 )
 
-set(LOGGER_LIB ${CMAKE_BINARY_DIR}/logger/build/liblogger.a)
+set(LOGGER_LIB ${CMAKE_BINARY_DIR}/logger/build/lib/liblogger.a)
 set(LOGGER_INCLUDE_DIR ${CMAKE_BINARY_DIR}/logger/build/headers/)
 
 include_directories(${CMAKE_SOURCE_DIR})

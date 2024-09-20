@@ -3,8 +3,8 @@
 
 #include <memory>
 
+#include "core/log.h"
 #include "interfaces/fs_gen_impl.h"
-#include "utils/include/log.h"
 
 namespace hash_generator {
 class HashGenerator;

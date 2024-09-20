@@ -4,7 +4,7 @@
 #include <memory>
 #include <string>
 
-#include "utils/include/log.h"
+#include "core/log.h"
 
 namespace fs_generator {
 class IFSGenImpl;

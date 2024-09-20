@@ -4,9 +4,9 @@
 #include <fstream>
 #include <mutex>
 
+#include "core/log.h"
 #include "include/interfaces/file_manager.h"
 #include "utils/include/constants.h"
-#include "utils/include/log.h"
 #include "utils/include/types.h"
 
 namespace file_manager {
